@@ -1,0 +1,17 @@
+{
+  "name": "cse499",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular-ui-bootstrap": "^2.1.4",
+    "bower": "^1.7.9",
+    "highcharts-ng": "0.0.11",
+    "ng-typeahead": "^1.0.7"
+  }
+}

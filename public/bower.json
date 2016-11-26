@@ -1,0 +1,20 @@
+{
+  "name": "cse499",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Sajjad43 <hmohamedsajjad@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "highcharts": "^4.2.5",
+    "jquery": "^3.0.0",
+    "jquery-1.9.1.min": "https://code.jquery.com/jquery-1.9.1.min.js",
+    "ammap3": "^3.20.8",
+    "iso-3166-country-codes-angular": "^1.2.1",
+    "angular-cookies": "1.5.7",
+    "angular-resource": "^1.5.8"
+  }
+}

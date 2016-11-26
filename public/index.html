@@ -1,0 +1,53 @@
+<html ng-app="cricket">
+    <head>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/customStyles.css">
+        <link rel="stylesheet" href="bower_components/ammap3/ammap/ammap.css">
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+		<script type="text/javascript" src="bower_components/ammap3/ammap/ammap.js"> </script>
+		<script src="bower_components/ammap3/ammap/maps/js/worldLow.js"></script>
+        <link rel="stylesheet" href="node_modules/ng-typeahead/dist/ng-typeahead.css">
+        <!-- include style files -->
+    </head>
+    <body>
+    
+        
+        <div ui-view="header"></div> 
+        <div ui-view="content"></div>
+        
+        <!--   including javascript files -->    
+    
+        <script src="./bower_components/jquery-1.9.1.min/index.js"></script>
+        <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+       
+
+        <script  src="./bower_components/angular/angular.min.js"></script>
+        
+        <script src="bower_components/iso-3166-country-codes-angular/dist/iso-3166-country-codes-angular.min.js"></script>
+         <script type="application/javascript" src="node_modules/ng-typeahead/dist/ng-typeahead.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="scripts/home/app.js"></script>
+        <script src="scripts/player/config_player.js"></script>
+        <script src="scripts/match/config_match.js"></script>
+        <script src="./bower_components/highcharts/highcharts.js"></script>
+        <script src="./bower_components/highcharts/modules/heatmap.js"></script>
+        <script src="./bower_components/highcharts/modules/exporting.js"></script>
+       
+        <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+        <script src="node_modules/highcharts-ng/dist/highcharts-ng.min.js"></script>
+        
+       
+        <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+        <script src='node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js'></script>
+        
+         <script src="scripts/home/controller.js"></script>
+        <script src="scripts/team/controller_team.js"></script>
+        <script src="scripts/player/controller_player.js"></script>
+        <script src="scripts/match/controller_match.js"></script> 
+        <script src="scripts/match/factory_match.js"></script>
+        <script src="scripts/home/factory.js"></script>
+        <script src="scripts/player/factory_player.js"></script>
+        <script src="scripts/team/factory_team.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    </body>
+</html>
