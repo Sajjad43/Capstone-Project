@@ -1,0 +1,53 @@
+ <div class="container-fluid">
+    <div class="row" >
+
+        <div class="col-sm-4" >
+           <center>
+               <div ng-controller="home" id="mapdiv" class="makingRelative" style=" width:90%;height:300px;"></div>
+               <p style="padding:10px"></p>
+               
+               
+               <form class="form-horizontal" ng-controller='teamSelect' ng-submit="teamSubmit()">
+                      <div class="form-group">
+                                  <div class="col-sm-6">
+                                        <input type="text" class="form-control" placeholder="Select a team" ng-model='team' ng-required="true" ng-required="true" uib-typeahead="country as country for country in countries | filter:$viewValue:startsWith | limitTo:5">
+                                  </div>        
+                                  <div class="col-sm-4">        
+                                        <input type="number" class="form-control"  placeholder="Year" ng-model="year" min='2003' max='2017' >
+                                  </div>
+                     </div>
+                     <div class="form-group">
+                            <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-block btn-primary">Submit</button>
+                            </div>
+                    </div>    
+               </form>             
+            </center>
+        </div>
+
+
+        <div class="col-sm-8">
+
+            <div ui-view="info"></div>
+            
+            <div class="row">
+                <p style="height:10px"></p>
+                <!--<center>
+                    <button type="button" class=" btn btn-default btn-info">Batting</button>
+                    <button type="button" class=" btn btn-default btn-success">Bowling</button>
+                </center>-->
+                <p style="height:5px;"></p>
+            </div>
+            <div class="row" >
+                
+                   <div ui-view='graphBlock' class="col-sm-offset-1 col-sm-10 pull-left container"></div>
+
+            </div>
+
+
+        </div>
+
+     </div>
+</div>     
+
+ 

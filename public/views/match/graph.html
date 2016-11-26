@@ -1,0 +1,24 @@
+<ul class="nav nav-tabs">
+    <li ng-class='{"active":team1==selectTeam}'><a ui-sref='.performance({team:team1,id:1})' ng-click='changeTeam(team1)'>{{team1}}</a></li>
+    <li ng-class='{"active":team2==selectTeam}'><a ui-sref='.performance({team:team2,id:2})'  ng-click='changeTeam(team2)'>{{team2}}</a></li>
+
+</ul>
+<center><h3>{{selectTeam}} <small> <span class="label label-default label-info">{{mode}}</span></small></h3>
+        
+</center>
+
+<center><div ui-view='graph'></div></center>
+
+
+
+<center>
+    <ul class="pagination">
+                               
+        <li  ui-sref-active='active' class="active"><a ui-sref=".performance({team:selectTeam,id:1})"  ng-click="mode='batting'">1</a></li>
+        <li  ui-sref-active='active'><a ui-sref=".performance({team:selectTeam,id:2})" ng-click="mode='batting'">2</a></li>
+        <li  ui-sref-active='active'><a ui-sref=".performance({team:selectTeam,id:3})" ng-click="mode='batting'">3</a></li>
+        <li  ui-sref-active='active'><a ui-sref=".performance({team:selectTeam,id:4})" ng-click="mode='bowling'">4</a></li>
+        <li  ui-sref-active='active'><a ui-sref=".performance({team:selectTeam,id:5})" ng-click="mode='bowling'">5</a></li>
+        <li  ui-sref-active='active'><a ui-sref=".performance({team:selectTeam,id:6})"  ng-click="mode='bowling'">6</a></li>      
+    </ul>
+</center>
