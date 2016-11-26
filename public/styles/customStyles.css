@@ -1,0 +1,46 @@
+.navbar-custom {
+  background-color: #168ccc;
+}
+.makingRelative{
+  position: relative;
+}
+
+.navbar-nav > li > a {
+  color: #fefefe;
+}
+.navbar-brand{
+     color: #fefefe;
+}
+body {
+  align: center;
+  padding: 55px 0px 0px 0px;
+  z-index: 0;
+}
+ .navbar-nav > li > a:hover,
+ .navbar-nav > li > a:focus {
+  color:  #fefefe;
+  background-color: #9bc2e4;
+}
+ 
+
+.divider{
+    border-right: 1px dashed #333;
+
+}
+ .navbar-brand:hover,
+ .navbar-brand:focus {
+  color: #e7e7e7;
+  background-color: transparent;
+}
+
+#tb{
+
+		width: 90%;
+		height: 40%;
+		overflow: scroll;
+}
+#grid{
+        width: 100%;
+		height: 90%;
+		overflow: scroll;
+}
