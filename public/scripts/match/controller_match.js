@@ -8,7 +8,9 @@ var app=angular.module('cricket')
          
          
             $scope.matchSubmit=function(){
-                console.log($scope.host+$scope.opponent);
+                console.log("gfgh"+$scope.host+$scope.opponent);
+                console.log($scope.year);
+                
                 $state.go('match.selectMatch',{host:$scope.host,opponent:$scope.opponent,year:$scope.year},{reload:true});
             }
             
