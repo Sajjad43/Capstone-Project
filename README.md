@@ -7,8 +7,8 @@ how to import the "database" folder(the exported database)-
 
 Steps-
 
-Create a folder(name it anything , suppose 'X'). Inside the folder, create a subfolder (name it "data)
-using cmd ,move to the newly created 'X',then run the command (mongod --dbpath=data)
+Create a folder(name it anything , suppose 'X'). Inside the folder, create a subfolder (name it "data).
+Using cmd ,move to the newly created 'X',then run the command (mongod --dbpath=data)
 
 start another cmd,run the command (mongorestore -d visualCric .../Capstone/database)
  visualCric is the name of the database and .../Capstone/database is the path correspond to exported Database folder located 
