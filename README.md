@@ -3,7 +3,7 @@ VisualCric(a data visualisation on cricket statistics)
 How to run the project-
 
 ----------------------------------------------------------
-how to import the subfolder name "database"(the exported database folder)-
+how to import the "database" folder(the exported database)-
 
 Steps-
 
