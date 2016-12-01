@@ -5,6 +5,7 @@ var player_batting_performance_for_matches=require("./player_batting_performance
 var player_batting_performance_on_different_positions=require("./player_batting_performance_on_different_positions.js");
 var player_bowling_performance=require("./player_bowling_performance.js");
 var player_list=require('./playerList.js')
+var player_header=require('./player_header.js')
 
 var player=express.Router();
 
@@ -30,4 +31,5 @@ exports.player=player;
 exports.player_batting_performance_for_matches=player_batting_performance_for_matches;
 exports.player_batting_performance_on_different_positions=player_batting_performance_on_different_positions;
 exports.player_bowling_performance=player_bowling_performance;
+exports.player_header=player_header;
 

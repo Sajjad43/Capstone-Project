@@ -11,6 +11,7 @@ var match_run_comparision=require("./match_run_comparision.js");
 var match_run_conceded_by_bowlers=require("./match_run_conceded_by_bowlers.js");
 var match_run_contribution_of_each_batsman=require("./match_run_contribution_of_each_batsman");
 var match_list=require("./match_list");
+var match_header=require('./match_header');
 
 
 
@@ -52,3 +53,4 @@ exports.match_partnership_analysis=match_partnership_analysis;
 exports.match_run_comparision=match_run_comparision;
 exports.match_run_conceded_by_bowlers=match_run_conceded_by_bowlers;
 exports.match_run_contribution_of_each_batsman=match_run_contribution_of_each_batsman;
+exports.match_header=match_header;

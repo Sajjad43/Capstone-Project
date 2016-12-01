@@ -6,6 +6,7 @@ var team_bowling_performance=require("./team_bowling_performance.js");
 var team_individual_batting_performance=require("./team_individual_batting_performance.js");
 var team_runs_every_10_overs=require("./team_runs_every_10_overs.js");
 var team_years_played=require("./team_years_played.js");
+var team_header=require('./team_header.js');
 
 
 var team=express.Router();
@@ -34,4 +35,5 @@ exports.team_batting_partnership=team_batting_partnership;
 exports.team_bowling_performance=team_bowling_performance;
 exports.team_individual_batting_performance=team_individual_batting_performance;
 exports.team_runs_every_10_overs=team_runs_every_10_overs;
+exports.team_header=team_header;
 
