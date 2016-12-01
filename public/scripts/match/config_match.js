@@ -72,9 +72,9 @@ angular.module('cricket')
                 
                 template:function($stateParams){
                     if($stateParams.id<=3)                   
-                        return "<div><div id='match_bat_"+$stateParams.id+"'></div></div>"
+                        return "<div><div style='height:60%;' id='match_bat_"+$stateParams.id+"'></div></div>"
                      else
-                         return "<div><div id='match_bowl_"+($stateParams.id-3)+"'></div></div>" 
+                         return "<div><div style='height:60%;' id='match_bowl_"+($stateParams.id-3)+"'></div></div>" 
                 },
                 controllerProvider:function($stateParams){
                     if($stateParams.id<=3)

@@ -44,19 +44,24 @@ var app=angular.module('cricket')
        
         $scope.team1=$stateParams.host;
         $scope.team2=$stateParams.opponent;
+        $scope.date=$stateParams.match;
         $scope.selectTeam=match.selectedTeam;
         
+        
+        
         $scope.match=$stateParams.match;
+        console.log($scope.date+'&'+$scope.match);
         $scope.mode='batting';
-        
-
-        
-        console.log($scope.match);
         
         $scope.changeTeam=function(team){
             $scope.selectTeam=team;
             match.selectedTeam=team;
         }
+        
+        $resource('/match/match_header/:team1/:team2/:date').get({team1:$scope.team1,team2:$scope.team2,date:$scope.date},function(item){
+            $scope.header=item;
+        })
+        
         
       
         

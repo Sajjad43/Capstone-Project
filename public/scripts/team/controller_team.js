@@ -422,6 +422,15 @@ var app=angular.module('cricket')
 
         $scope.country=$stateParams.team;
         $scope.year=$stateParams.year;
+        
+        $resource('/team/team_header/:team/:year').get({team:$scope.country,year:$scope.year},function(item){
+            console.log(item);
+            $scope.header=item;
+        })
+        
+        
+        
+        
        
     }])
     

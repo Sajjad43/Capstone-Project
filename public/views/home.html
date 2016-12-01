@@ -1,4 +1,4 @@
-<div class="container-fluid" style="height: 100%;" ng-controller="home">
+<div class="container-fluid" style="height: 100%;" >
 
      <div class="row">
             <div class="col-sm-3">
@@ -14,31 +14,31 @@
                                     </dt>
                                     <dd>
 
-                                        <cite title="Source Title">100 countries</cite>
+                                        <cite title="Source Title">{{header.Number_of_teams}} countries</cite>
                                     </dd>
                                     <dt>
                                         <h3><small>Highest Run:</small></h3>
 
                                     </dt>
                                     <dd>
-                                        <cite title="Source Title">100 by England</cite>
+                                        <cite title="Source Title">{{header.highest_runs}} by {{header.highest_runs_team}}</cite>
                                     </dd>
                                     <dt><h3><small>Lowest Run</small></h3></dt>
                                     <dd>
-                                        <cite title="Source Title">20 by Scotland</cite>
+                                        <cite title="Source Title">{{header.lowest_runs}} by {{header.lowest_runs_team}}</cite>
                                     </dd>
                                     <dt><h3><small>Most Ducks</small></h3></dt>
                                     <dd>
 
-                                         <cite title="Source Title">-Inzamam</cite>
+                                         <cite title="Source Title">-{{header.most_ducks_batsman}}</cite>
                                     </dd>
                                     <dt><h3><small>Best Batting</small></h3></dt>
                                     <dd>
-                                        <cite title="Source Title">-Shewag(200)</cite>
+                                        <cite title="Source Title">-{{header.best_batsman}}({{header.best_batsman_runs}}})</cite>
                                     </dd>
                                     <dt><h3><small>Best Bowling</small></h3></dt>
                                     <dd>
-                                        <cite title="Source Title">-Shoaib Akhtar</cite>
+                                        <cite title="Source Title">-{{header.best_bowler}} ({{header.best_bowler_runs_conceded}}/{{header.best_bowler_wickets}})</cite>
                                     </dd>
                                 </dl>
                           </div>

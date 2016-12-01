@@ -22,6 +22,12 @@ var myApp = angular.module('cricket')
             var countries=[];
             
             
+            
+            
+            
+            
+            
+            
             var user=$resource('/match');
             user.query(function(item){
               
@@ -50,6 +56,15 @@ var myApp = angular.module('cricket')
                 }
                 map.dataProvider.areas=countries;
                 map.validateData();
+                
+                
+                $resource('/home_header').get(function(item){
+                    console.log(item);
+                    $scope.header=item;
+                })
+                
+                
+                
 
             })
             

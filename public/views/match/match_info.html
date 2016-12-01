@@ -11,30 +11,34 @@
     <center>
         <div class="col-sm-3">
              <h2><small><strong>Player of the match</strong></small></h2>
-             <p> <cite>Inzamam</cite> </p>
+             <p> <cite>{{header.player_of_the_match}}</cite> </p>
         </div>
          <div class="col-sm-2">
-                      <h2><small><strong>Highest Total</strong></small></h2>
+                      <h2><small><strong>Toss</strong></small></h2>
                      <p>
-                            <cite>300</cite>
+                            <cite>{{header.match.toss.winner}}({{header.match.toss.decision}})</cite>
                       </p>
         </div>
          <div class="col-sm-2">
-                   <h2><small><strong>Lowest Total</strong></small></h2>
+                   <h2><small><strong>Result</strong></small></h2>
                      <p>
-                           <cite>30</cite>
+                         <cite>{{header.match.outcome.winner}} by 
+                             <cite ng-if='header.match.outcome.by.runs!=null'>{{header.match.outcome.by.runs}}runs</cite>
+                             <cite ng-if='header.match.outcome.by.wickets!=null'>{{header.match.outcome.by.wickets}}wicket</cite>({{header.winner_runs_scored}}/{{header.team_lost_runs}})
+                             
+                         </cite>
                      </p>
          </div>
        <div class="col-sm-2">
                 <h2><small><strong>Best Batting</strong></small></h2>
                 <p>
-                    <cite>200 - Razzak </cite>
+                    <cite>{{header.best_batsman}}({{header.best_batsman_runs}}) </cite>
                  </p>
         </div>
        <div class="col-sm-3">
                  <h2><small><strong>Best Bowling</strong></small></h2>
                  <p>
-                     <cite>4/20 - Sami </cite>
+                     <cite>{{header.best_bowler}}({{header.best_bowler_wickets}}/{{header.best_bowler_run_conceded}}) </cite>
                   </p>
        </div>
     </center>

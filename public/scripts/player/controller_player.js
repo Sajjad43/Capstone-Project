@@ -18,7 +18,12 @@ var app=angular.module('cricket')
          $scope.player=$stateParams.player;
          $scope.team=$stateParams.team;
          $scope.year=$stateParams.year;    
-                
+        
+        $resource('/player/player_header/:player_name').get({player_name:$scope.player},function(item){
+            console.log(item);
+            $scope.header=item;
+        })
+               
         
         
        

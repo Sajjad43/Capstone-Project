@@ -6,32 +6,27 @@
         <div class="col-sm-3">
             <h2><small><strong>Matches PLayed</strong></small></h2>
              <p>
-                 <cite>-35</cite>
+                 <cite>-{{header.matches_played}}</cite>
              </p>
 
              </div>
-             <div class="col-sm-2">
-                <h2><small><strong>Total Runs</strong></small></h2>
+             <div class="col-sm-3">
+                <h2><small><strong>Highest Runs</strong></small></h2>
                   <p>
-                     <cite>-300</cite>
+                     <cite>-{{header.highest_runs_scored}}</cite>
                    </p>
              </div>
-            <div class="col-sm-2">
-                  <h2><small><strong>Century</strong></small></h2>
+            <div class="col-sm-3">
+                  <h2><small><strong>Century/Fifty</strong></small></h2>
                   <p>
-                         <cite>30</cite>
+                         <cite>{{header.total_100s}}/{{header.total_50s}}</cite>
                   </p>
              </div>
-            <div class="col-sm-2">
-                    <h2><small><strong>Best Batting</strong></small></h2>
-                    <p>
-                       <cite>200 with pakistan</cite>
-                    </p>
-            </div>
+           
             <div class="col-sm-3">
-                    <h2><small><strong>Best Bowling</strong></small></h2>
+                    <h2><small><strong>Best Bowling(W/R)</strong></small></h2>
                     <p>
-                        <cite>4/20 west indies</cite>
+                        <cite>{{header.best_bowling_wickets}}/{{header.best_bowling_runs_conceded}}</cite>
                     </p>
              </div>
     </center>
