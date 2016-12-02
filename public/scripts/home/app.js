@@ -16,6 +16,18 @@ angular.module('cricket',['ui.bootstrap','ui.router','iso-3166-country-codes','n
                 }
             }
         })
+        .state('about',{
+            url:'/about',
+            views:{
+                'header':{
+                    templateUrl:'views/header.html'
+                },
+                'content':{
+                    templateUrl:'views/about.html'
+                }
+            }
+        })
+    
         .state('team',{
             url:'/team',
             views:{
