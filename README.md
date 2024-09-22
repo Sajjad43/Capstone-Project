@@ -1,5 +1,8 @@
 VisualCric(a data visualisation on cricket statistics)
 
+This is my undergraduate capstone project. This project is visualising the players and teams performance usign the different parameters of the game. This project is done with MEAN stack.
+
+
 Setup
 
 ----------------------------------------------------------
